@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="background-two"></div>
+    <div class="container">
+      <nav class="navbar">
+        <div class="navbar-content">
+          <div class="username"><b>Usuario autenticado:</b> <span id="username-display">tellxmaster</span></div>
+          <button class="logout-button" onclick="clearLocalStorageAndRedirect()">Salir</button>
+        </div>
+      </nav>      
+      <div class="tarjetas-container">
+        <div class="card">
+          <div class="top-block">
+            <div class="card-chip">
+                <i class="fa-regular fa-credit-card"></i>
+            </div>
+            <span class="card-name"> Oxygen Pay </span>
+          </div>
+          <div class="card-number">
+            <p id="card-display"></p>
+          </div>
+          <div class="bottom-block">
+            <div class="balance">
+              <span id="name-display"></span>
+              <div>Balance</div>
+              <div class="card-balance" id="balance-display">$ </div>
+            </div>
+            <div class="card-icon">
+              <span class="circle-left">
+                <i class="fa-solid fa-circle"></i>
+              </span>
+              <i class="fa-solid fa-circle"></i>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="controls">
+        <button class="btn"><i class="fa-solid fa-money-bill-transfer small"></i>Transferir</button>
+        <button class="btn"><i class="fa-solid fa-money-check-dollar small"></i> Pagar Servicios</button>
+        <button class="btn"><i class="fa-solid fa-mobile-button small"></i></i>Recargar Saldo</button>
+    </div>
+    <table class="movimientos-bancarios">
+      <tr>
+        <th>Fecha</th>
+        <th>Descripción</th>
+        <th>Monto</th>
+      </tr>
+      <tr>
+        <td>2023-01-01</td>
+        <td>Compra en Supermercado</td>
+        <td>-50.00</td>
+      </tr>
+      <tr>
+        <td>2023-01-02</td>
+        <td>Pago de Salario</td>
+        <td>+1000.00</td>
+      </tr>
+      <tr>
+        <td>2023-01-05</td>
+        <td>Pago de factura de Electricidad</td>
+        <td>-60.00</td>
+      </tr>
+      <tr>
+        <td>2023-01-06</td>
+        <td>Cena en Restaurante</td>
+        <td>-75.00</td>
+      </tr>
+      <tr>
+        <td>2023-01-07</td>
+        <td>Compra en Tienda de Ropa</td>
+        <td>-120.00</td>
+      </tr>
+      <tr>
+        <td>2023-01-09</td>
+        <td>Pago de Internet</td>
+        <td>-30.00</td>
+      </tr>
+      
+    </table>
+    
+
+    <script src="/assets/js/dashboard.js"></script>
+    <script src="/assets/js/logout.js"></script>
+  </body>
+</html>

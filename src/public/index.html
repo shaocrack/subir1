@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="logo">
+        <img src="../assets/img/logo.png" alt="logo" width="115px" height="115px">
+    </div>
+    <form class="login" action="login" method="POST" autocomplete="off" id="login-form">
+        <div class="form-col">
+            <div class="form-row">
+                <h2 class="title">Login</h2>
+            </div>
+            <div class="form-row">
+                <i class="fa-solid fa-user small"></i>
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-input" name="username" id="username">
+            </div>
+            <div class="form-row">
+                <i class="fa-solid fa-key small"></i>
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-input" name="password" id="password">
+            </div>        
+            <div class="form-row link">
+                ¿No tienes cuenta aún?<a class="bold-link" href="/register">  Registrate</a>
+            </div>
+            <div class="form-row">
+                <button type="submit" class="btn">Ingresar <i class="fa-solid fa-arrow-right-to-bracket small"></i></button>
+            </div>
+        </div>
+        
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/assets/js/login.js"></script>
+</body>
+</html>
